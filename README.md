@@ -27,12 +27,13 @@ The following **additional** features are implemented:
 - [x] Added a slider to adjust the tip percentage.
 - [x] Made the app visually appealing.
 - [x] On the settings page, the text field for changing the Default Tip Percentage is the first responder. This way the user doesn't have to tap anywhere to change the value. 
+- [x] App icon
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://recordit.co/gxeQEj20CV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://recordit.co/2Vbc0IYK6o.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [Recordit](https://recordit.co).
 
