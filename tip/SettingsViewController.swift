@@ -18,6 +18,8 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        defaultTipPercentage.becomeFirstResponder()
+        
         defaultTipPercentage.text = "\(Int(defaults.integer(forKey: "defaultTipPercentage")))"
     }
     
@@ -28,13 +30,12 @@ class SettingsViewController: UIViewController {
     @IBAction func defaultTipPercentage(_ sender: Any) {
         
         let defaultTip = Int(defaultTipPercentage.text!) ?? 15
-        
 
-        
         // Set an Integer value for some key.
         defaults.set(defaultTip, forKey: "defaultTipPercentage")
         
         // Force UserDefaults to save.
         defaults.synchronize()
+        
     }
 }

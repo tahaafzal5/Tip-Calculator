@@ -20,9 +20,17 @@ class ViewController: UIViewController {
     // Access UserDefaults
     let defaults = UserDefaults.standard
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        billAmountField.becomeFirstResponder()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         
         super.viewWillAppear(animated)
+        
+        billAmountField.becomeFirstResponder()
 
         // Get an Integer value.
         tipSlider.value = Float(defaults.integer(forKey: "defaultTipPercentage"))
@@ -39,10 +47,6 @@ class ViewController: UIViewController {
         totalPerPersonLabel.text = String(format: "$ %.2f each", total/Double(people))
         totalLabel.text = String(format: "$ %.2f", total)
         
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
     }
 
     @IBAction func onTap(_ sender: Any) {
